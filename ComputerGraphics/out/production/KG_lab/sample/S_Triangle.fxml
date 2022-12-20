@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.STriangle">
+    <children>
+        <ImageView disable="true" fitHeight="500.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/colored-stain-texture.jpg" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="651.0" layoutY="-1.0" opacity="0.8" prefHeight="480.0" prefWidth="70.0" style="-fx-background-color: #696969;">
+            <children>
+                <ImageView fitHeight="54.0" fitWidth="67.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/facebook.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="54.0" fitWidth="67.0" layoutX="8.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/instagram.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="54.0" fitWidth="67.0" layoutX="8.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/twitter.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="InfoT" fitHeight="54.0" fitWidth="67.0" layoutX="8.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/information.png" />
+                    </image>
+                </ImageView>
+            </children></AnchorPane>
+        <AnchorPane fx:id="Fractal" layoutX="68.0" layoutY="142.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" opacity="0.8" prefHeight="286.0" prefWidth="286.0" style="-fx-background-color: #696969;">
+         <children>
+            <LineChart fx:id="GrafLine" animated="false" layoutX="-45.0" layoutY="-15.0" legendVisible="false" prefHeight="339.0" prefWidth="345.0" stylesheets="@style.css">
+              <xAxis>
+                <NumberAxis fx:id="X_axis" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="Y_axis" side="LEFT" />
+              </yAxis>
+               <styleClass>
+                  <String fx:value="chart-series-line" />
+                  <String fx:value="chart-series-line" />
+               </styleClass>
+            </LineChart>
+         </children></AnchorPane>
+        <Label layoutX="271.0" layoutY="31.0" text="Triangle" textFill="DIMGRAY">
+            <font>
+                <Font name="Rockwell" size="44.0" />
+            </font>
+        </Label>
+        <Label layoutX="446.0" layoutY="116.0" text="Data entry" textFill="DIMGRAY">
+            <font>
+                <Font name="Rockwell" size="22.0" />
+            </font>
+        </Label>
+        <Slider fx:id="sliderF" layoutX="458.0" layoutY="414.0" max="1.0" min="-5.0" opacity="0.8" prefHeight="28.0" prefWidth="115.0" style="-fx-background-color: #696969; -fx-background-radius: 20;" value="1.0" />
+        <TextField fx:id="IterationNum" alignment="CENTER_RIGHT" layoutX="376.0" layoutY="407.0" opacity="0.8" prefHeight="43.0" prefWidth="70.0" promptText="0" style="-fx-background-color: #696969; -fx-background-radius: 40; -fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 40;">
+            <font>
+                <Font size="17.0" />
+            </font></TextField>
+        <ImageView fx:id="BtnDownload" fitHeight="54.0" fitWidth="67.0" layoutX="14.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/download.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="MenuBtn" fitHeight="54.0" fitWidth="67.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/menu.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="380.0" layoutY="371.0" text="Coefficient of increase" textFill="DIMGRAY">
+            <font>
+                <Font name="Rockwell" size="22.0" />
+            </font>
+        </Label>
+      <TextField alignment="CENTER_RIGHT" layoutX="376.0" layoutY="159.0" opacity="0.8" prefHeight="43.0" prefWidth="70.0" promptText="0" style="-fx-background-color: #696969; -fx-background-radius: 40; -fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 40;" fx:id="xA">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER_RIGHT" layoutX="376.0" layoutY="223.0" opacity="0.8" prefHeight="43.0" prefWidth="70.0" promptText="0" style="-fx-background-color: #696969; -fx-background-radius: 40; -fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 40;" fx:id="xB">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER_RIGHT" layoutX="376.0" layoutY="285.0" opacity="0.8" prefHeight="43.0" prefWidth="70.0" promptText="0" style="-fx-background-color: #696969; -fx-background-radius: 40; -fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 40;" fx:id="xC">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="yA" alignment="CENTER_RIGHT" layoutX="504.0" layoutY="159.0" opacity="0.8" prefHeight="43.0" prefWidth="70.0" promptText="0" style="-fx-background-color: #696969; -fx-background-radius: 40; -fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 40;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="yB" alignment="CENTER_RIGHT" layoutX="504.0" layoutY="223.0" opacity="0.8" prefHeight="43.0" prefWidth="70.0" promptText="0" style="-fx-background-color: #696969; -fx-background-radius: 40; -fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 40;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="yC" alignment="CENTER_RIGHT" layoutX="504.0" layoutY="285.0" opacity="0.8" prefHeight="43.0" prefWidth="70.0" promptText="0" style="-fx-background-color: #696969; -fx-background-radius: 40; -fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 40;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Max_X" alignment="CENTER_RIGHT" layoutX="33.0" layoutY="95.0" opacity="0.8" prefHeight="43.0" prefWidth="70.0" promptText="0" style="-fx-background-color: #696969; -fx-background-radius: 40; -fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 40;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Max_Y" alignment="CENTER_RIGHT" layoutX="114.0" layoutY="95.0" opacity="0.8" prefHeight="43.0" prefWidth="70.0" promptText="0" style="-fx-background-color: #696969; -fx-background-radius: 40; -fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 40;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Step" alignment="CENTER_RIGHT" layoutX="195.0" layoutY="95.0" opacity="0.8" prefHeight="43.0" prefWidth="70.0" promptText="0" style="-fx-background-color: #696969; -fx-background-radius: 40; -fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 40;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <Label layoutX="458.0" layoutY="166.0" text="x1" textFill="DIMGRAY">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="458.0" layoutY="230.0" text="x2" textFill="DIMGRAY">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="458.0" layoutY="292.0" text="x3" textFill="DIMGRAY">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="591.0" layoutY="166.0" text="y1" textFill="DIMGRAY">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="591.0" layoutY="230.0" text="y2" textFill="DIMGRAY">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="591.0" layoutY="292.0" text="y3" textFill="DIMGRAY">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="BtnOkGraf" layoutX="282.0" layoutY="103.0" mnemonicParsing="false" opacity="0.8" style="-fx-background-color: #696969;" text="ОК" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="35.0" layoutY="62.0" text="Max x" textFill="DIMGRAY">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="62.0" text="Max y" textFill="DIMGRAY">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="207.0" layoutY="62.0" text="step" textFill="DIMGRAY">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="BtnOkTriangle" layoutX="472.0" layoutY="343.0" mnemonicParsing="false" opacity="0.8" style="-fx-background-color: #696969;" text="Create" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="13.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SColor">
+    <children>
+        <ImageView disable="true" fitHeight="500.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/colored-stain-texture.jpg" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="651.0" layoutY="-1.0" opacity="0.8" prefHeight="480.0" prefWidth="70.0" style="-fx-background-color: #696969;">
+            <children>
+                <ImageView fitHeight="54.0" fitWidth="67.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/facebook.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="54.0" fitWidth="67.0" layoutX="8.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/instagram.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="54.0" fitWidth="67.0" layoutX="8.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/twitter.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="InfoC" fitHeight="54.0" fitWidth="67.0" layoutX="8.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/information.png" />
+                    </image>
+                </ImageView>
+            </children></AnchorPane>
+        <Label layoutX="238.0" layoutY="39.0" text="RGB &amp; HSL" textFill="DIMGRAY">
+            <font>
+                <Font name="Rockwell" size="44.0" />
+            </font>
+        </Label>
+        <Label layoutX="446.0" layoutY="116.0" text="Data entry" textFill="DIMGRAY">
+            <font>
+                <Font name="Rockwell" size="22.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutX="372.0" layoutY="159.0" opacity="0.8" prefHeight="52.0" prefWidth="139.0" style="-fx-background-color: #696969; -fx-background-radius: 40;">
+            <children>
+                <Label alignment="TOP_CENTER" layoutX="2.0" layoutY="12.0" prefHeight="29.0" prefWidth="155.0" text="RGB" textFill="WHITE">
+                    <font>
+                        <Font name="Rockwell" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="372.0" layoutY="221.0" opacity="0.8" prefHeight="52.0" prefWidth="139.0" style="-fx-background-color: #696969; -fx-background-radius: 40;">
+            <children>
+                <Label alignment="TOP_CENTER" layoutX="3.0" layoutY="11.0" prefHeight="43.0" prefWidth="155.0" text="HSL" textFill="WHITE">
+                    <font>
+                        <Font name="Rockwell" size="20.0" />
+                    </font>
+                </Label>
+            </children></AnchorPane>
+        <RadioButton fx:id="RadBtnRGB" layoutX="552.0" layoutY="176.0" mnemonicParsing="false" selected="true">
+            <toggleGroup>
+                <ToggleGroup fx:id="MyGroup" />
+            </toggleGroup></RadioButton>
+        <RadioButton fx:id="RadBtnHSL" layoutX="552.0" layoutY="239.0" mnemonicParsing="false" toggleGroup="$MyGroup" />
+        <Slider fx:id="sliderF" layoutX="459.0" layoutY="320.0" max="1.0" opacity="0.8" prefHeight="28.0" prefWidth="115.0" style="-fx-background-color: #696969; -fx-background-radius: 20;" />
+        <TextField fx:id="RedNum" alignment="CENTER_RIGHT" layoutX="376.0" layoutY="311.0" opacity="0.8" prefHeight="43.0" prefWidth="70.0" promptText="0" style="-fx-background-color: #696969; -fx-background-radius: 40; -fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 40;">
+            <font>
+                <Font size="17.0" />
+            </font></TextField>
+        <Button fx:id="BtnRedOk" layoutX="586.0" layoutY="320.0" mnemonicParsing="false" opacity="0.8" style="-fx-background-color: #696969;" text="ОК" textFill="WHITE" visible="false">
+            <font>
+                <Font name="Rockwell" size="13.0" />
+            </font>
+        </Button>
+        <ImageView fx:id="BtnDownload" fitHeight="54.0" fitWidth="67.0" layoutX="80.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/download.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="MenuBtn" fitHeight="54.0" fitWidth="67.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/menu.png" />
+            </image>
+        </ImageView>
+      <ImageView fx:id="BtnUpload" fitHeight="54.0" fitWidth="67.0" layoutX="14.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@assets/download.png" />
+         </image>
+      </ImageView>
+        <Label layoutX="380.0" layoutY="277.0" text="Illumination of red" textFill="DIMGRAY">
+            <font>
+                <Font name="Rockwell" size="22.0" />
+            </font>
+        </Label>
+      <TextField fx:id="R" alignment="CENTER" layoutX="460.0" layoutY="357.0" opacity="0.8" prefHeight="43.0" prefWidth="54.0" promptText="0" style="-fx-background-color: #696969; -fx-background-radius: 40; -fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 40;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="G" alignment="CENTER" layoutX="517.0" layoutY="357.0" opacity="0.8" prefHeight="43.0" prefWidth="54.0" promptText="0" style="-fx-background-color: #696969; -fx-background-radius: 40; -fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 40;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="B" alignment="CENTER" layoutX="574.0" layoutY="359.0" opacity="0.8" prefHeight="43.0" prefWidth="54.0" promptText="0" style="-fx-background-color: #696969; -fx-background-radius: 40; -fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 40;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="H" alignment="CENTER" layoutX="460.0" layoutY="403.0" opacity="0.8" prefHeight="43.0" prefWidth="54.0" promptText="0" style="-fx-background-color: #696969; -fx-background-radius: 40; -fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 40;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="S" alignment="CENTER" layoutX="517.0" layoutY="403.0" opacity="0.8" prefHeight="43.0" prefWidth="54.0" promptText="0" style="-fx-background-color: #696969; -fx-background-radius: 40; -fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 40;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="L" alignment="CENTER" layoutX="574.0" layoutY="404.0" opacity="0.8" prefHeight="43.0" prefWidth="54.0" promptText="0" style="-fx-background-color: #696969; -fx-background-radius: 40; -fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 40;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <Label layoutX="390.0" layoutY="365.0" text="RGB" textFill="DIMGRAY">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="392.0" layoutY="410.0" text="HSL" textFill="DIMGRAY">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="Image_Original" layoutX="14.0" layoutY="99.0" prefHeight="173.0" prefWidth="173.0" style="-fx-background-color: #696969;">
+         <children>
+            <ImageView fx:id="Image_Original_view" fitHeight="173.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="Image_After" layoutX="187.0" layoutY="272.0" prefHeight="173.0" prefWidth="173.0" style="-fx-background-color: #696969;">
+         <children>
+            <ImageView fx:id="Image_After_view" fitHeight="173.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
+      <Label layoutX="207.0" layoutY="159.0" prefHeight="54.0" prefWidth="149.0" text="&lt;- Image 1" textFill="DIMGRAY">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="350.0" text="Image 2 -&gt;" textFill="DIMGRAY">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

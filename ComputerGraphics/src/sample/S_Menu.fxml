@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SMenu">
+<children>
+    <ImageView disable="true" fitHeight="500.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@assets/colored-stain-texture.jpg" />
+        </image>
+    </ImageView>
+    <AnchorPane layoutX="651.0" layoutY="-1.0" opacity="0.8" prefHeight="480.0" prefWidth="70.0" style="-fx-background-color: #696969;">
+        <children>
+            <ImageView fitHeight="54.0" fitWidth="67.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@assets/facebook.png" />
+                </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="67.0" layoutX="8.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@assets/instagram.png" />
+                </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="67.0" layoutX="8.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@assets/twitter.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="Information" fitHeight="54.0" fitWidth="67.0" layoutX="8.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@assets/information.png" />
+                </image>
+            </ImageView>
+        </children></AnchorPane>
+    <Label layoutX="271.0" layoutY="43.0" text="Menu" textFill="DIMGRAY">
+        <font>
+            <Font name="Rockwell" size="44.0" />
+        </font>
+    </Label>
+      <ImageView fitHeight="220.0" fitWidth="200.0" layoutX="413.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/tools.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="FractalBtn" layoutX="86.0" layoutY="140.0" mnemonicParsing="false" opacity="0.8" prefHeight="54.0" prefWidth="209.0" style="-fx-background-color: #696969;" text="Fractal" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="ColorBtn" layoutX="86.0" layoutY="224.0" mnemonicParsing="false" opacity="0.8" prefHeight="54.0" prefWidth="209.0" style="-fx-background-color: #696969;" text="RGB &amp; HSL" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="TriangleBtn" layoutX="86.0" layoutY="311.0" mnemonicParsing="false" opacity="0.8" prefHeight="54.0" prefWidth="209.0" style="-fx-background-color: #696969;" text="Triangle" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="76.0" fitWidth="110.0" layoutX="10.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/jewelry.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="110.0" layoutX="10.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/labyrinth.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="110.0" layoutX="10.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/attach.png" />
+         </image>
+      </ImageView>
+</children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+.chart-series-line
+{
+	-fx-stroke: rgb(32, 122, 51);
+}
+
+.chart-series-line
+{
+	-fx-stroke-width: 4px;
+}
+
+.text-area .content {
+    -fx-background-color: #696969 ;
+
+    -fx-border-color: #696969;
+    -fx-border-width: 3px;
+
+}
+
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Information">
+<children>
+    <ImageView disable="true" fitHeight="500.0" fitWidth="720.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@assets/colored-stain-texture.jpg" />
+        </image>
+    </ImageView>
+    <AnchorPane layoutX="651.0" layoutY="-1.0" opacity="0.8" prefHeight="480.0" prefWidth="70.0" style="-fx-background-color: #696969;">
+        <children>
+            <ImageView fitHeight="54.0" fitWidth="67.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@assets/facebook.png" />
+                </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="67.0" layoutX="8.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@assets/instagram.png" />
+                </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="67.0" layoutX="8.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@assets/twitter.png" />
+                </image>
+            </ImageView>
+        </children></AnchorPane>
+    <Label layoutX="233.0" layoutY="34.0" text="Information" textFill="DIMGRAY">
+        <font>
+            <Font name="Rockwell" size="44.0" />
+        </font>
+    </Label>
+      <TextArea fx:id="TextA" editable="false" layoutX="137.0" layoutY="101.0" prefHeight="342.0" prefWidth="443.0" promptText="Fractal - irregular, self-similar structure. In a broad sense, a fractal means a figure, some parts of which in arbitrary magnification are similar to itself.RGB - additive color model, which describes a method of color synthesis in which red, green and blue light are superimposed together, mixing into different colors.HSL - color model in which any color is determined by three characteristics: color tone, saturation, luminosity.Triangle - a geometric figure consisting of three points that do not lie on one line and three segments connecting them.Fractal - irregular, self-similar structure. In a broad sense, a fractal means a figure, some parts of which in arbitrary magnification are similar to itself.RGB - additive color model, which describes a method of color synthesis in which red, green and blue light are superimposed together, mixing into different colors.HSL - color model in which any color is determined by three characteristics: color tone, saturation, luminosity.Triangle - a geometric figure consisting of three points that do not lie on one line and three segments connecting them." style="-fx-background-color: #696969;" stylesheets="@style.css">
+         <font>
+            <Font name="Rockwell" size="11.0" />
+         </font></TextArea>
+      <Button fx:id="CloseBtn" layoutX="28.0" layoutY="24.0" mnemonicParsing="false" opacity="0.8" prefHeight="41.0" prefWidth="82.0" style="-fx-background-color: #696969;" text="Back" textFill="#fffefe">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Video" layoutX="24.0" layoutY="423.0" mnemonicParsing="false" opacity="0.8" prefHeight="41.0" prefWidth="91.0" style="-fx-background-color: #696969;" text="Video" textFill="#fffefe">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+</children>
+</AnchorPane>
